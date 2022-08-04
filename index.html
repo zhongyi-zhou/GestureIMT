@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Gesture-aware Interactive Machine Teaching with In-situ Object Annotations (UIST 22).">
+  <meta name="keywords" content="Interactive Machine Teaching, In-situ Annotations, Gestures">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gesture-aware Interactive Machine Teaching with In-situ Object Annotations</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title" style="font-size: 44px;">Gesture-aware Interactive Machine Teaching with In-situ Object Annotations</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://zhongyizhou.net/">Zhongyi Zhou</a>,</span>
+            <span class="author-block">
+              <a href="https://iis-lab.org/member/koji-yatani/">Koji Yatani</a></span>
+
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">The University of Tokyo</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">UIST 2022</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/pdf/2011.12948"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2208.01211"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=ZS-Ser7-vGI"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/zhongyi-zhou/GestureIMT"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://drive.google.com/file/d/1bCWQW123BGZUdqOJws6F9PHFeQbkMmkZ/view"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Dataset</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./videos/teaser.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <p>Our IMT system can annotate the object of interest in real time when the user performs teaching using gestures.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="carousel results-carousel">
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./images/results-objects/01.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./images/results-objects/02.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./images/results-objects/03.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./images/results-objects/04.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./images/results-objects/05.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./images/results-objects/06.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./images/results-objects/07.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./images/results-objects/08.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./images/results-objects/09.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./images/results-objects/10.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./images/results-objects/11.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item">
+          <video poster="" autoplay controls muted loop playsinline height="100%">
+            <source src="./images/results-objects/12.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Interactive Machine Teaching (IMT) systems allow non-experts to easily create Machine Learning (ML) models.
+            However, existing vision-based IMT systems either ignore annotations on the objects of interest or require users to annotate in a post-hoc manner.
+            Without the annotations on objects, the model may misinterpret the objects using unrelated features.
+            Post-hoc annotations cause additional workload, which diminishes the usability of the overall model building process.
+            % with vision-based IMT.
+            In this paper, we develop LookHere, which integrates in-situ object annotations into vision-based IMT.
+            LookHere exploits users' deictic gestures to segment the objects of interest in real time.
+            This segmentation information can be additionally used for training.
+            To achieve the reliable performance of this object segmentation, we utilize our custom dataset called HuTics, including 2040 front-facing images of deictic gestures toward various objects by 170 people.
+            The quantitative results of our user study showed that participants were 16.3 times faster in creating a model with our system compared to a standard IMT system with a post-hoc annotation process while demonstrating comparable accuracies.
+            Additionally, models created by our system showed a significant accuracy improvement ($\Delta mIoU=0.466$) in segmenting the objects of interest compared to those without annotations.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/ZS-Ser7-vGI"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <!-- Motivation -->
+  <div class="columns is-centered">
+    <h2 class="title is-2">Motivation</h2>
+  </div>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <video autoplay controls muted loop playsinline height="100%">
+            <source src="./images/motivation/saliency.mp4"
+                    type="video/mp4">
+          </video>
+          <p>
+            The model trained by standard IMT systems may misinterpret the objects by using unrelated features.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="column">
+        <div class="columns is-centered">
+          <div class="column content">
+            <video autoplay controls muted loop playsinline height="100%">
+              <source src="./images/motivation/annotate.mp4"
+                      type="video/mp4">
+            </video>
+            <p>
+              The user can clarify the object s/he wants to teach by the post-hoc annotation but this process is very time-consuming.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <!-- LookHere -->
+  <div class="columns is-centered">
+    <h2 class="title is-2">LookHere</h2>
+  </div>
+  <div class="container is-max-desktop">
+    <div class="column is-full-width">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-justified" >
+            <p>
+              Our system, LookHere, achieves in-situ annotations when the user perform teaching.
+            </p>
+          </div>
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <video poster="" autoplay controls muted loop playsinline height="100%">
+                <source src="./videos/LookHere_720p.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <!-- LookHere -->
+  <div class="columns is-centered">
+    <h2 class="title is-2">
+      HuTics
+    </h2>
+  </div>
+  <div class="container is-max-desktop">
+    <div class="column is-full-width">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-justified" >
+            <p>
+              HuTics is a human deictic gestures dataset that includes 2040 images collected from 170 people.
+              It covers four kinds of deictic gestures to objects: exhibiting, pointing, presenting and touching.
+              <b>Note that we only recruited human labelers to annonate the objects of interest, and the human hands (and arms) are predicted using 
+                <a href="https://github.com/GoGoDuck912/Self-Correction-Human-Parsing">[this project]</a>. 
+              </b>
+              Therefore, the hand annotations in the dataset are not always correct.
+            </p>
+          </div>
+          <h3 class="title is-3">Exhibiting</h3>
+          <div class="columns is-centered has-text-centered">
+            <div class="column">
+              <img src="./images/hutics/exhibit-0.jpg">
+            </div>
+            <div class="column">
+              <img src="./images/hutics/exhibit-1.jpg">
+            </div>
+            <div class="column">
+              <img src="./images/hutics/exhibit-2.jpg">
+            </div>
+          </div>
+
+          <h3 class="title is-3">Pointing</h3>
+          <div class="columns is-centered has-text-centered">
+            <div class="column">
+              <img src="./images/hutics/point-0.jpg">
+            </div>
+            <div class="column">
+              <img src="./images/hutics/point-1.jpg">
+            </div>
+            <div class="column">
+              <img src="./images/hutics/point-2.jpg">
+            </div>
+          </div>
+
+          <h3 class="title is-3">Presenting</h3>
+          <div class="columns is-centered has-text-centered">
+            <div class="column">
+              <img src="./images/hutics/present-0.jpg">
+            </div>
+            <div class="column">
+              <img src="./images/hutics/present-1.jpg">
+            </div>
+            <div class="column">
+              <img src="./images/hutics/present-2.jpg">
+            </div>
+          </div>
+
+          <h3 class="title is-3">Touching</h3>
+          <div class="columns is-centered has-text-centered">
+            <div class="column">
+              <img src="./images/hutics/touch-0.jpg">
+            </div>
+            <div class="column">
+              <img src="./images/hutics/touch-1.jpg">
+            </div>
+            <div class="column">
+              <img src="./images/hutics/touch-2.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+<pre><code>
+  @misc{zhou2022gesture,
+    doi = {10.48550/ARXIV.2208.01211},
+    url = {https://arxiv.org/abs/2208.01211},
+    author = {Zhou, Zhongyi and Yatani, Koji},
+    title = {Gesture-aware Interactive Machine Teaching with In-situ Object Annotations},
+    publisher = {arXiv},
+    year = {2022}
+  }
+  
+  @inproceedings{zhou2021enhancing,
+    author = {Zhou, Zhongyi and Yatani, Koji},
+    title = {Enhancing Model Assessment in Vision-Based Interactive Machine Teaching through Real-Time Saliency Map Visualization},
+    year = {2021},
+    isbn = {9781450386555},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    url = {https://doi.org/10.1145/3474349.3480194},
+    doi = {10.1145/3474349.3480194},
+    pages = {112–114},
+    numpages = {3},
+    keywords = {Visualization, Saliency Map, Interactive Machine Teaching},
+    location = {Virtual Event, USA},
+    series = {UIST '21}
+    }
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The design of this website is inspired by <a href="https://github.com/nerfies/nerfies.github.io">this project</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
