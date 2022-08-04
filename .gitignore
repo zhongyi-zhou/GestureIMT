@@ -1,3 +1,14 @@
+# */logs/*
+# *.pth.tar
+# *.pt
+# *.pem
+# */package-lock.json
+# */tmp/
+# events.out.*
+# demo_app/src/trainer/*
+
+*/node_modules/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

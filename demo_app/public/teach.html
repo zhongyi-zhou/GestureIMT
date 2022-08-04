@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Demo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.4.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@2.1.0"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/d3-color@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-interpolate@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/mypage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="container-fluid main-content" >
+      <div class="row container-fluid">
+        <div class="col-8">
+          <div class="train_funcs">
+            <div class="centerbox">
+              <video id="webcam"></video>
+            </div>
+            <div class="centerbox" style="padding-top: 20px;">
+              <button id="btn_photo" class="btnround"><i class="fa fa-camera" aria-hidden="true" style="font-size: 2rem;"></i></button>
+            </div>
+            
+          </div>
+
+          
+          <div id="testcv" style="display: none;">
+            <div class="centerbox" style="padding: 20px;">
+              <canvas id="cav_input" width="640" height="480"></canvas>
+            </div>
+            <div class="centerbox" style="padding: 20px;">
+              <canvas id="cav_vis" width="640" height="480"></canvas>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-4" style="background-color: rgb(242, 244, 245);">
+          <!-- <div id="Training" class="Training"></div> -->
+          <div class="centerbox">
+            <div id="Training" class="train_funcs"></div>
+            <div id="Testing" class="test_funcs"></div>
+            <div class="train_funcs" style="display: none;">
+              <input type="checkbox" id="backup">
+              <label for="backup"> Backup Training Data?</label><br>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <div id="pseudo-click" style="display: none;"></div>
+    </div>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="assets/js/utils/utils.js"></script>
+
+
+    <script src="assets/js/teach.js"></script>
+    <script src="assets/js/ui/train_box.js"></script>
+    <script src="assets/js/ui/test_box.js"></script>
+    <script src="assets/js/utils/upload.js"></script>
+    <script src="assets/js/webrtc/webrtc.js"></script>
+  </body>
+</html>
