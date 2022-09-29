@@ -16,11 +16,18 @@
 
 
 ## Getting Started
-This code has been tested on PyTorch 1.12 and CUDA 11.6.
+This code has been tested on PyTorch 1.12 with CUDA 11.6 and PyTorch 1.10 with CUDA 11.3.
 
-Install the conda environment
+To install PyTorch 1.12 with CUDA 11.6,
 ```
-./initialization.sh
+chmod +x ./install/init_cuda_11_6.sh
+./install/init_cuda_11_6.sh
+```
+
+To install PyTorch 1.12 with CUDA 11.3,
+```
+chmod +x ./install/init_cuda_11_3.sh
+./install/init_cuda_11_3.sh
 ```
 
 ### If you are using other versions
