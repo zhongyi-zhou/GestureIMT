@@ -33,7 +33,7 @@ chmod +x ./install/init_cuda_11_3.sh
 ### If you are using other versions
 (not necessary if the code above succeeds.)
 This project may also work in other version of PyTorch.
-You can exam the required packages under ```./initialization.sh``` and install them by yourself. You also need to download two checkpoint files from [Google Drive](https://drive.google.com/drive/folders/148N8SedToltmiKUDxOiSGpNW1S_gcW_f?usp=sharing):
+You can exam the required packages under ```./install``` and install them by yourself. You also need to download two checkpoint files from [Google Drive](https://drive.google.com/drive/folders/148N8SedToltmiKUDxOiSGpNW1S_gcW_f?usp=sharing):
 - put ```resnet18_adam.pth.tar``` under ```./demo_app/src/ckpt/``` and ```./object_highlights/ckpt/```
 - put ```unet-b0-bgr-100epoch.pt``` under ```./demo_app/src/ckpt/```
 
