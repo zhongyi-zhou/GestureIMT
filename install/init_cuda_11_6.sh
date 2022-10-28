@@ -1,8 +1,9 @@
 conda create -n "lookhere" python=3.8 -y
 conda activate lookhere
-conda install pytorch torchvision cudatoolkit=11.6 -c pytorch -c conda-forge -y
 conda install pip -y
-pip install aiohttp aiortc ninja numpy opencv-python segmentation-models-pytorch tqdm tensorboard godwn
+conda install pytorch==1.12.1 torchvision==0.13.1 cudatoolkit=11.6 -c pytorch -c conda-forge -y
+
+pip install aiohttp aiortc ninja numpy opencv-python segmentation-models-pytorch tqdm tensorboard gdown
 
 mkdir downloads
 cd downloads
