@@ -5,8 +5,10 @@
   <img src="images/final.gif" alt="demo"/>
 </p>
 
-### [Project Page](https://zhongyi-zhou.github.io/GestureIMT/) | [Paper](https://arxiv.org/abs/2208.01211)
+### [Project Page](https://zhongyi-zhou.github.io/GestureIMT/) | [Paper](https://arxiv.org/abs/2208.01211) | [UTokyo News](https://www.u-tokyo.ac.jp/focus/en/press/z0508_00253.html) 
 <br>
+
+
 
 > [**Gesture-aware Interactive Machine Teaching with In-situ Object Annotations**]() <br>
 > [Zhongyi Zhou](https://zhongyizhou.net/), [Koji Yatani](https://iis-lab.org/member/koji-yatani/) <br>
@@ -14,6 +16,7 @@
 > UIST 2022 <br>
 > **Abstract**: Interactive Machine Teaching (IMT) systems allow non-experts to easily create Machine Learning (ML) models. However, existing vision-based IMT systems either ignore annotations on the objects of interest or require users to annotate in a post-hoc manner. Without the annotations on objects, the model may misinterpret the objects using unrelated features. Post-hoc annotations cause additional workload, which diminishes the usability of the overall model building process. In this paper, we develop LookHere, which integrates in-situ object annotations into vision-based IMT. LookHere exploits users' deictic gestures to segment the objects of interest in real time. This segmentation information can be additionally used for training. To achieve the reliable performance of this object segmentation, we utilize our custom dataset called HuTics, including 2040 front-facing images of deictic gestures toward various objects by 170 people. The quantitative results of our user study showed that participants were 16.3 times faster in creating a model with our system compared to a standard IMT system with a post-hoc annotation process while demonstrating comparable accuracies. Additionally, models created by our system showed a significant accuracy improvement ($\Delta mIoU=0.466$) in segmenting the objects of interest compared to those without annotations.
 
+News
 
 ## Getting Started
 This code has been tested on PyTorch 1.12 with CUDA 11.6 and PyTorch 1.10 with CUDA 11.3.
@@ -136,13 +139,21 @@ The output video will be at ```vids/tissue_out.mp4```
 
 ## Citations
 ```bibtex
-@misc{zhou2022gesture,
-  doi = {10.48550/ARXIV.2208.01211},
-  url = {https://arxiv.org/abs/2208.01211},
-  author = {Zhou, Zhongyi and Yatani, Koji},
-  title = {Gesture-aware Interactive Machine Teaching with In-situ Object Annotations},
-  publisher = {arXiv},
-  year = {2022}
+@inproceedings{zhou2022gesture,
+author = {Zhou, Zhongyi and Yatani, Koji},
+title = {Gesture-Aware Interactive Machine Teaching with In-Situ Object Annotations},
+year = {2022},
+isbn = {9781450393201},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3526113.3545648},
+doi = {10.1145/3526113.3545648},
+booktitle = {Proceedings of the 35th Annual ACM Symposium on User Interface Software and Technology},
+articleno = {27},
+numpages = {14},
+keywords = {dataset, deictic gestures, in-situ annotation, Interactive machine teaching},
+location = {Bend, OR, USA},
+series = {UIST '22}
 }
 
 @inproceedings{zhou2021enhancing,
